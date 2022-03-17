@@ -23,8 +23,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Intrastructure", "Intrastru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ABSA.Assessment.Persistence", "ABSA.Assessment.Persistence\ABSA.Assessment.Persistence.csproj", "{351BF488-FC27-4C46-B1A9-49D6CA86574F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABSA.Assessment.PhoneBook.App", "ABSA.Assessment.App\ABSA.Assessment.PhoneBook.App.csproj", "{D2EDCC5E-82E9-4D2C-A3FA-8A4CE46F3D67}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,10 +55,6 @@ Global
 		{351BF488-FC27-4C46-B1A9-49D6CA86574F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{351BF488-FC27-4C46-B1A9-49D6CA86574F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{351BF488-FC27-4C46-B1A9-49D6CA86574F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D2EDCC5E-82E9-4D2C-A3FA-8A4CE46F3D67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D2EDCC5E-82E9-4D2C-A3FA-8A4CE46F3D67}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D2EDCC5E-82E9-4D2C-A3FA-8A4CE46F3D67}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D2EDCC5E-82E9-4D2C-A3FA-8A4CE46F3D67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,7 +66,6 @@ Global
 		{7CF95FEC-F587-4BD4-925B-05561589B114} = {8932184A-A3D6-4B51-8358-3F58263FC534}
 		{7A89A5A1-F542-45FE-8326-4B41BAC5ABAB} = {8932184A-A3D6-4B51-8358-3F58263FC534}
 		{351BF488-FC27-4C46-B1A9-49D6CA86574F} = {F161A086-2CFD-4BBC-8F14-9C1AA4927E16}
-		{D2EDCC5E-82E9-4D2C-A3FA-8A4CE46F3D67} = {D9B86F42-FC04-4306-B5A5-47653E3312C1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {48EDDD4A-6ADF-46A9-AB0A-35EBAF9A0F07}
