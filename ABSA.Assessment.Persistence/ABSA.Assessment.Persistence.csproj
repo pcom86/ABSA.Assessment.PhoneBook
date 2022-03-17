@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ABSA.Assessment.DataLayer\ABSA.Assessment.DataLayer.csproj" />
+    <ProjectReference Include="..\ABSA.Assessment.Domain\ABSA.Assessment.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

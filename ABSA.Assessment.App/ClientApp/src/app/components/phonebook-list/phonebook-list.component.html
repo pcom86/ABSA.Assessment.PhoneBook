@@ -1,0 +1,77 @@
+<h1 id="tableLabel">Phonebook list</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<button
+  style="margin: 50px; padding: 10px"
+  type="button"
+  class="btn btn-primary"
+  (click)="openPopup()">Add Phonebook
+</button>
+<div
+  class="modal"
+  tabindex="-1"
+  role="dialog"
+  [ngStyle]="{'display':displayStyle}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Add Phonebook Item</h4>
+      </div>
+      <div class="modal-body">
+        <div class="submit-form">
+          <div *ngIf="!submitted">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                required
+                [(ngModel)]="addPhoneBook.name"
+                name="name"
+              />
+            </div>
+          
+            <button (click)="createPhoneBook()" class="btn btn-success">Submit</button>
+          </div>  
+            
+           <div *ngIf="submitted">
+            <h4>You submitted successfully!</h4>
+          
+          </div>  
+            </div>
+  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" 
+                (click)="closePopup()">
+          Close
+        </button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+<table class='table table-striped' aria-labelledby="tableLabel" >
+  <thead>
+    <tr>
+      <th>Name</th>
+    
+      <!-- <th>Summary</th> -->
+    </tr>
+  </thead>
+  <tbody>
+   
+    <tr *ngFor="let phonebook of phoneBookList let i = index" >
+     
+      <td>{{ phonebook.name }}</td>
+     <td>
+        <button   (click)="setCurrentPhoneBookItem(phonebook, i)">
+         Edit
+       </button>
+      
+     </td>
+    </tr>
+  </tbody>
+</table>
